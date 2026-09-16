@@ -1,0 +1,869 @@
+/* =========================================================
+   SAMIKSHYA PORTFOLIO - COMPLETE CSS
+   Burgundy + Cream Theme
+========================================================= */
+
+
+/* =========================================================
+   1. BASIC SETUP
+========================================================= */
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+html {
+    scroll-behavior: smooth;
+}
+
+body {
+    margin: 0;
+    font-family: Arial, Helvetica, sans-serif;
+
+    background-color: #F3E9DC;
+    color: #3B2F2B;
+
+    overflow: hidden;
+}
+
+
+/* =========================================================
+   2. NAVIGATION
+========================================================= */
+
+nav {
+    position: fixed;
+    top: 0;
+    left: 0;
+
+    width: 100%;
+    height: 80px;
+
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+
+    padding: 0 8%;
+
+    background-color: #6B1F2D;
+
+    z-index: 10000;
+}
+
+nav h2 {
+    color: #F3E9DC;
+    font-size: 30px;
+    font-weight: 700;
+}
+
+nav ul {
+    display: flex;
+    align-items: center;
+
+    gap: 30px;
+
+    list-style: none;
+}
+
+nav a {
+    color: #F3E9DC;
+
+    text-decoration: none;
+
+    font-size: 15px;
+    font-weight: 500;
+
+    transition: 0.3s;
+}
+
+nav a:hover {
+    color: #D9C7B1;
+}
+
+
+/* =========================================================
+   3. HORIZONTAL PAGE CONTAINER
+========================================================= */
+
+.pages {
+    display: flex;
+    flex-direction: row;
+
+    width: 100vw;
+    height: 100vh;
+
+    overflow: hidden;
+}
+
+
+/* =========================================================
+   4. EVERY PAGE
+========================================================= */
+
+#home,
+#about,
+#education,
+#skills,
+#experience,
+#projects,
+#contact {
+    width: 100vw;
+    min-width: 100vw;
+    max-width: 100vw;
+
+    height: 100vh;
+    min-height: 100vh;
+
+    flex: 0 0 100vw;
+
+    position: relative;
+
+    padding: 120px 10% 70px;
+
+    overflow-x: hidden;
+    overflow-y: auto;
+}
+
+
+/* =========================================================
+   5. COMMON PAGE HEADINGS
+========================================================= */
+
+.section-label {
+    color: #6B1F2D;
+
+    font-size: 13px;
+    font-weight: 700;
+
+    letter-spacing: 2px;
+
+    margin-bottom: 10px;
+}
+
+#about h2,
+#education h2,
+#skills h2,
+#experience h2,
+#projects h2 {
+    color: #3B2F2B;
+
+    font-size: 42px;
+
+    margin-bottom: 30px;
+}
+
+
+/* =========================================================
+   6. HOME
+========================================================= */
+
+#home {
+    background-color: #F3E9DC;
+
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: flex-start;
+
+    padding-top: 100px;
+}
+
+#home > p:first-child {
+    color: #6B1F2D;
+
+    font-size: 20px;
+    font-weight: 600;
+
+    margin-bottom: 14px;
+
+    width: auto;
+}
+
+#home h1 {
+    color: #3B2F2B;
+
+    font-size: clamp(48px, 5vw, 72px);
+    line-height: 1.05;
+
+    margin-bottom: 12px;
+
+    width: 100%;
+    max-width: 900px;
+}
+
+#home h2 {
+    color: #7A6D61;
+
+    font-size: clamp(22px, 2.5vw, 30px);
+    line-height: 1.3;
+
+    margin-bottom: 25px;
+
+    width: 100%;
+    max-width: 800px;
+}
+
+#home > p:nth-of-type(2) {
+    color: #5F5149;
+
+    width: 100%;
+    max-width: 650px;
+
+    font-size: 18px;
+    line-height: 1.7;
+
+    margin-bottom: 30px;
+
+    white-space: normal;
+    word-break: normal;
+    overflow-wrap: normal;
+}
+
+.work-button {
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+
+    width: fit-content;
+
+    padding: 14px 26px;
+
+    background-color: #6B1F2D;
+    color: #F3E9DC;
+
+    border-radius: 50px;
+
+    text-decoration: none;
+    font-weight: 600;
+
+    transition: 0.3s;
+}
+
+.work-button:hover {
+    background-color: #541722;
+    transform: translateY(-2px);
+}
+
+
+/* =========================================================
+   7. ABOUT
+========================================================= */
+
+#about {
+    background-color: #D9C7B1;
+
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: flex-start;
+}
+
+#about .section-label,
+#about h2,
+#about > p {
+    width: 100%;
+    max-width: 800px;
+}
+
+#about > p:not(.section-label) {
+    color: #5F5149;
+
+    font-size: 18px;
+    line-height: 1.8;
+
+    margin-bottom: 18px;
+
+    white-space: normal;
+    word-break: normal;
+    overflow-wrap: normal;
+}
+
+
+/* =========================================================
+   8. EDUCATION
+========================================================= */
+
+#education {
+    background-color: #F3E9DC;
+
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: flex-start;
+}
+
+.education-card {
+    width: 100%;
+    max-width: 800px;
+
+    padding: 35px 40px;
+
+    background-color: #E8D8C5;
+
+    border: 1px solid #C5AD93;
+    border-radius: 35px;
+
+    box-shadow: 0 8px 25px rgba(59, 47, 43, 0.08);
+}
+
+.education-header {
+    width: 100%;
+
+    display: flex;
+    align-items: flex-start;
+    justify-content: space-between;
+
+    gap: 30px;
+}
+
+.education-header > div {
+    flex: 1;
+    min-width: 0;
+}
+
+.education-header h3 {
+    color: #6B1F2D;
+
+    font-size: 25px;
+
+    margin-bottom: 8px;
+}
+
+.degree {
+    color: #5F5149;
+
+    font-size: 17px;
+    line-height: 1.5;
+
+    white-space: normal;
+    word-break: normal;
+}
+
+.education-header span {
+    color: #7A6D61;
+
+    flex-shrink: 0;
+
+    white-space: nowrap;
+}
+
+.location {
+    color: #7A6D61;
+
+    margin-top: 18px;
+
+    white-space: normal;
+}
+
+.education-details {
+    display: flex;
+    align-items: center;
+    flex-wrap: wrap;
+
+    gap: 35px;
+
+    margin-top: 25px;
+    padding-top: 20px;
+
+    border-top: 1px solid #C5AD93;
+
+    color: #5F5149;
+}
+
+.education-details p {
+    white-space: normal;
+    word-break: normal;
+}
+
+
+/* =========================================================
+   9. SKILLS
+========================================================= */
+
+#skills {
+    background-color: #D9C7B1;
+
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: flex-start;
+}
+
+.skills-container {
+    width: 100%;
+    max-width: 950px;
+
+    display: grid;
+    grid-template-columns: repeat(4, 190px);
+
+    gap: 25px;
+}
+
+.skill-card {
+    width: 190px;
+    height: 190px;
+
+    border-radius: 50%;
+
+    background-color: #F3E9DC;
+
+    border: 1px solid #C5AD93;
+
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+
+    text-align: center;
+
+    padding: 22px;
+
+    transition: 0.3s;
+}
+
+.skill-card:hover {
+    transform: translateY(-7px);
+
+    border-color: #6B1F2D;
+
+    box-shadow: 0 10px 25px rgba(59, 47, 43, 0.12);
+}
+
+.skill-card h3 {
+    color: #6B1F2D;
+
+    font-size: 16px;
+    line-height: 1.3;
+
+    margin-bottom: 10px;
+}
+
+.skill-card p {
+    color: #5F5149;
+
+    font-size: 13px;
+
+    margin: 2px 0;
+}
+
+
+/* =========================================================
+   10. EXPERIENCE
+========================================================= */
+
+#experience {
+    background-color: #F3E9DC;
+
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+    align-items: flex-start;
+
+    padding-top: 110px;
+}
+
+.experience-card {
+    width: 100%;
+    max-width: 900px;
+
+    flex-shrink: 0;
+
+    padding: 25px 30px;
+
+    margin-bottom: 20px;
+
+    background-color: #E8D8C5;
+
+    border: 1px solid #C5AD93;
+    border-radius: 35px;
+
+    transition: 0.3s;
+}
+
+.experience-card:hover {
+    border-color: #6B1F2D;
+
+    transform: translateY(-3px);
+}
+
+.experience-header {
+    width: 100%;
+
+    display: flex;
+    justify-content: space-between;
+    align-items: flex-start;
+
+    gap: 25px;
+}
+
+.experience-header > div {
+    flex: 1;
+    min-width: 0;
+}
+
+.experience-header h3 {
+    color: #3B2F2B;
+
+    font-size: 22px;
+
+    margin-bottom: 5px;
+}
+
+.company {
+    color: #6B1F2D;
+
+    font-size: 16px;
+    font-weight: 700;
+}
+
+.experience-header span {
+    color: #7A6D61;
+
+    flex-shrink: 0;
+
+    white-space: nowrap;
+}
+
+.experience-location {
+    color: #7A6D61;
+
+    margin-top: 10px;
+
+    line-height: 1.5;
+}
+
+.experience-card ul {
+    width: 100%;
+
+    margin-top: 15px;
+
+    padding-left: 20px;
+}
+
+.experience-card li {
+    color: #5F5149;
+
+    width: 100%;
+
+    font-size: 15px;
+    line-height: 1.6;
+
+    margin-bottom: 9px;
+
+    white-space: normal;
+    word-break: normal;
+    overflow-wrap: normal;
+}
+
+
+/* =========================================================
+   11. PROJECTS
+========================================================= */
+
+#projects {
+    background-color: #D9C7B1;
+
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: flex-start;
+}
+
+.projects-container {
+    width: 100%;
+    max-width: 1000px;
+
+    display: grid;
+
+    grid-template-columns: repeat(2, minmax(0, 1fr));
+
+    gap: 25px;
+}
+
+.project-card {
+    width: 100%;
+    min-width: 0;
+
+    padding: 30px;
+
+    background-color: #F3E9DC;
+
+    border: 1px solid #C5AD93;
+    border-radius: 35px;
+
+    transition: 0.3s;
+}
+
+.project-card:hover {
+    transform: translateY(-5px);
+
+    border-color: #6B1F2D;
+
+    box-shadow: 0 10px 25px rgba(59, 47, 43, 0.1);
+}
+
+.project-type {
+    color: #6B1F2D;
+
+    font-size: 12px;
+    font-weight: 700;
+
+    letter-spacing: 1.5px;
+
+    margin-bottom: 14px;
+}
+
+.project-card h3 {
+    color: #3B2F2B;
+
+    font-size: 23px;
+    line-height: 1.3;
+
+    margin-bottom: 10px;
+
+    word-break: normal;
+}
+
+.project-event {
+    color: #7A6D61;
+
+    line-height: 1.5;
+
+    margin-bottom: 18px;
+}
+
+.project-description {
+    color: #5F5149;
+
+    font-size: 15px;
+    line-height: 1.7;
+
+    margin-bottom: 22px;
+
+    white-space: normal;
+    word-break: normal;
+    overflow-wrap: normal;
+}
+
+.project-tech {
+    display: flex;
+    flex-wrap: wrap;
+
+    gap: 8px;
+}
+
+.project-tech span {
+    padding: 7px 12px;
+
+    background-color: #6B1F2D;
+    color: #F3E9DC;
+
+    border-radius: 50px;
+
+    font-size: 12px;
+}
+
+
+/* =========================================================
+   12. CONTACT
+========================================================= */
+
+#contact {
+    background-color: #6B1F2D;
+
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+
+    text-align: center;
+}
+
+#contact .section-label {
+    color: #D9C7B1;
+}
+
+#contact h2 {
+    color: #F3E9DC;
+
+    font-size: 48px;
+
+    margin-bottom: 20px;
+}
+
+.contact-text {
+    width: 100%;
+    max-width: 600px;
+
+    color: #E8D8C5;
+
+    font-size: 18px;
+    line-height: 1.7;
+
+    margin-bottom: 30px;
+}
+
+.contact-links {
+    display: flex;
+    justify-content: center;
+
+    gap: 15px;
+}
+
+.contact-links a {
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+
+    padding: 13px 25px;
+
+    border: 1px solid #F3E9DC;
+    border-radius: 50px;
+
+    color: #F3E9DC;
+
+    text-decoration: none;
+    font-weight: 600;
+
+    transition: 0.3s;
+}
+
+.contact-links a:hover {
+    background-color: #F3E9DC;
+    color: #6B1F2D;
+}
+
+
+/* =========================================================
+   14. RESPONSIVE
+========================================================= */
+
+@media (max-width: 1000px) {
+
+    nav {
+        padding: 0 6%;
+    }
+
+    nav ul {
+        gap: 18px;
+    }
+
+    #home,
+    #about,
+    #education,
+    #skills,
+    #experience,
+    #projects,
+    #contact {
+        padding-left: 10%;
+        padding-right: 10%;
+    }
+
+    .skills-container {
+        grid-template-columns: repeat(2, 175px);
+    }
+
+    .skill-card {
+        width: 175px;
+        height: 175px;
+    }
+}
+
+
+@media (max-width: 700px) {
+
+    nav {
+        height: 70px;
+
+        padding: 0 5%;
+    }
+
+    nav h2 {
+        font-size: 24px;
+    }
+
+    nav ul {
+        gap: 10px;
+    }
+
+    nav a {
+        font-size: 11px;
+    }
+
+    #home,
+    #about,
+    #education,
+    #skills,
+    #experience,
+    #projects,
+    #contact {
+        padding: 100px 12% 60px;
+    }
+
+    #home h1 {
+        font-size: 42px;
+    }
+
+    #home h2 {
+        font-size: 22px;
+    }
+
+    .education-header,
+    .experience-header {
+        flex-direction: column;
+
+        gap: 10px;
+    }
+
+    .education-header span,
+    .experience-header span {
+        white-space: normal;
+    }
+
+    .education-card {
+        padding: 25px;
+    }
+
+    .skills-container {
+        grid-template-columns: repeat(2, 145px);
+
+        gap: 15px;
+    }
+
+    .skill-card {
+        width: 145px;
+        height: 145px;
+
+        padding: 15px;
+    }
+
+    .skill-card h3 {
+        font-size: 14px;
+    }
+
+    .skill-card p {
+        font-size: 11px;
+    }
+
+    .projects-container {
+        grid-template-columns: 1fr;
+    }
+
+    .next-arrow,
+    .previous-arrow {
+        width: 48px;
+        height: 48px;
+
+        font-size: 22px;
+    }
+
+    .previous-arrow {
+        left: 12px;
+    }
+
+    .next-arrow {
+        right: 12px;
+    }
+}
