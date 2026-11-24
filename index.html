@@ -1,97 +1,303 @@
 
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Personal Expense Tracker</title>
+
+    <title>Samikshya Neupane | Portfolio</title>
+
     <link rel="stylesheet" href="style.css">
+
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.2/css/all.min.css">
 </head>
 
 <body>
 
-    <div class="container">
+    <!-- NAVIGATION -->
 
-        <h1>Personal Expense Tracker</h1>
-        <p>Track your spending and manage your money.</p>
+    <nav>
+        <h2>SN.</h2>
 
-        <h2>Add New Expense</h2>
+        <ul>
+            <li><a href="#home">Home</a></li>
+            <li><a href="#about">About</a></li>
+            <li><a href="#projects">Projects</a></li>
+            <li><a href="#contact">Contact</a></li>
 
-        <form id="expense-form">
-
-            <label for="expense-name">Expense Name</label>
-            <input type="text" id="expense-name"
-                   placeholder="Example: Coffee" required>
-            
-            <label for="expense-date">Expense Date</label>
-            <input type="date" id="expense-date" required>
-       
-
-            <label for="expense-amount">Amount ($)</label>
-            <input type="number" id="expense-amount"
-                   placeholder="Example: 5.50"
-                   min="0.01" step="0.01" required>
-
-            <label for="expense-category">Category</label>
-            <select id="expense-category">
-                <option value="Food">Food</option>
-                <option value="Shopping">Shopping</option>
-                <option value="Transportation">Transportation</option>
-                <option value="Bills">Bills</option>
-                <option value="Other">Other</option>
-            </select>
-
-            <button type="submit">Add Expense</button>
-
-        </form>
-
-        <h2>Total Spending</h2>
-        <h3 id="total-spending">$0.00</h3>
+            <li>
+                <a href="resume.pdf" target="_blank" class="nav-resume">
+                    Resume ↗
+                </a>
+            </li>
+        </ul>
+    </nav>
 
 
-<div class="chart-section">
-    <h2>Spending by Category</h2>
-    <p>See where your money goes.</p>
+    <!-- HOMEPAGE -->
 
-    <div id="category-chart"></div>
-</div>
+    <section id="home">
 
-<div class="import-section">
-    <h2>Import Expenses</h2>
-    <p>Upload a CSV file to add multiple expenses at once.</p>
+        <div class="home-workspace">
 
-    <input
-        type="file"
-        id="csv-file"
-        accept=".csv,text/csv"
-    >
+            <div class="profile-card">
 
-    <button type="button" id="import-button">
-        Import CSV
-    </button>
+                <div class="profile-image">
+                    <img src="profile.jpeg" alt="Samikshya Neupane">
+                </div>
 
-    <p id="import-message"></p>
-</div>
+                <div class="social-icons">
 
-        
-<h2>My Expenses</h2>
+                    <a href="https://github.com/Samikshya09" target="_blank" aria-label="GitHub">
+                        <i class="fa-brands fa-github"></i>
+                    </a>
 
-<div class="month-filter">
-    <label for="filter-month">Filter by Month</label>
-    <input type="month" id="filter-month">
-    <button type="button" id="clear-filter">Show All</button>
-</div>
+                    <a href="https://www.linkedin.com/in/samikshya5" target="_blank" aria-label="LinkedIn">
+                        <i class="fa-brands fa-linkedin"></i>
+                    </a>
 
-<p id="monthly-total"></p>
+                    <a href="mailto:sneupane6@caldwell.edu" aria-label="Email">
+                        <i class="fa-solid fa-envelope"></i>
+                    </a>
 
-<ul id="expense-list"></ul>
+                </div>
 
-        
+            </div>
+
+
+            <div class="intro-area">
+
+                <p class="intro-label">HELLO, I'M</p>
+
+                <h1>Samikshya<br>Neupane.</h1>
+
+                <h2>
+                    Exploring <span>technology,</span><br>
+                    data & cybersecurity.
+                </h2>
+
+                <p class="intro-description">
+                    Computer Science & Business Analytics student
+                    at Caldwell University, turning curiosity
+                    into meaningful projects.
+                </p>
+
+                <div class="home-buttons">
+
+                    <a href="#projects" class="primary-button">
+                        Explore My Work →
+                    </a>
+
+                    <a href="resume.pdf" target="_blank" class="secondary-button">
+                        View Resume ↗
+                    </a>
+
+                </div>
+
+            </div>
+
+        </div>
+
+    </section>
+
+
+    <!-- PROJECTS -->
+
+<!-- PROJECTS -->
+
+<section id="projects">
+
+    <p class="section-label">MY WORK</p>
+
+    <h2>Selected Projects.</h2>
+
+    <div class="projects-container">
+
+        <!-- FLOW FINANCE DASHBOARD -->
+
+        <div class="project-card">
+
+            <img src="flow-dashboard.png"
+                 alt="Personal Finance Dashboard"
+                 class="project-image">
+
+            <p class="project-type">
+                FINANCE & TECHNOLOGY
+            </p>
+
+            <h3>Flow — Personal Finance Dashboard</h3>
+
+            <p class="project-description">
+                A personal finance dashboard for tracking income,
+                expenses, and spending habits.
+            </p>
+
+            <div class="project-links">
+
+                <a href="https://samikshya09.github.io/Flow-Personal-Finance-Dashboard/"
+   target="_blank" rel="noopener">
+    Open Application ↗
+</a>
+
+           
+                </a>
+
+            </div>
+
+        </div>
+
+
+        <!-- SSH THREAT DETECTION -->
+
+        <div class="project-card">
+
+            <img src="splunk-dashboard.png"
+                 alt="SSH Threat Detection"
+                 class="project-image">
+
+            <p class="project-type">
+                CYBERSECURITY & IT
+            </p>
+
+            <h3>SSH Threat Detection</h3>
+
+            <p class="project-description">
+                Detecting suspicious login activity
+                through security log analysis using Splunk.
+            </p>
+
+            <div class="project-links">
+                <a href=https://github.com/Samikshya09/SSH-Threat-Detection-Splunk
+                   target="_blank" rel="noopener">
+                    View Project ↗
+                </a>
+
+            </div>
+
+        </div>
 
     </div>
 
-    <script src="script.js"></script>
+</section>
+
+
+
+
+    <!-- ABOUT -->
+
+    <section id="about">
+
+        <p class="section-label">A LITTLE ABOUT ME</p>
+
+        <h2>Beyond the Code.</h2>
+
+        <p>
+            I'm a Computer Science and Business Analytics student
+            at Caldwell University with an interest in cybersecurity,
+            data analytics, and technology. I enjoy exploring new
+            ideas, learning through hands-on projects, and finding
+            practical solutions to real-world problems.
+        </p>
+
+        <div class="about-details">
+
+            <p>
+                <i class="fa-solid fa-graduation-cap"></i>
+                Caldwell University · Class of 2027
+            </p>
+
+            <p>
+                <i class="fa-solid fa-location-dot"></i>
+                New Jersey, United States
+            </p>
+
+        </div>
+
+    </section>
+
+
+    <!-- TECHNICAL SKILLS -->
+
+    <section id="skills">
+
+        <p class="section-label">MY TOOLKIT</p>
+
+        <h2>Technologies I Work With.</h2>
+
+        <div class="technology-tags">
+
+            <span><i class="fa-brands fa-python"></i> Python</span>
+
+            <span><i class="fa-solid fa-database"></i> SQL</span>
+
+            <span><i class="fa-brands fa-js"></i> JavaScript</span>
+
+            <span><i class="fa-brands fa-react"></i> React</span>
+
+            <span><i class="fa-brands fa-html5"></i> HTML & CSS</span>
+
+            <span><i class="fa-brands fa-linux"></i> Linux</span>
+
+            <span><i class="fa-solid fa-shield-halved"></i> Splunk</span>
+
+            <span><i class="fa-solid fa-table"></i> Excel</span>
+
+            <span><i class="fa-solid fa-chart-column"></i> Tableau</span>
+
+            <span><i class="fa-solid fa-chart-simple"></i> Power BI</span>
+
+            <span><i class="fa-brands fa-github"></i> GitHub</span>
+
+            <span><i class="fa-brands fa-figma"></i> Figma</span>
+
+        </div>
+
+    </section>
+
+
+    <!-- CONTACT -->
+
+    <section id="contact">
+
+        <p class="section-label">GET IN TOUCH</p>
+
+        <h2>Let's Connect.</h2>
+
+        <p class="contact-text">
+            Open to new opportunities, ideas, and connections.
+        </p>
+
+        <div class="contact-links">
+
+            <a href="mailto:sneupane6@caldwell.edu">
+                <i class="fa-solid fa-envelope"></i>
+                Email
+            </a>
+
+            <a href="https://www.linkedin.com/in/samikshya5"
+               target="_blank">
+                <i class="fa-brands fa-linkedin"></i>
+                LinkedIn
+            </a>
+
+            <a href="https://github.com/Samikshya09"
+               target="_blank">
+                <i class="fa-brands fa-github"></i>
+                GitHub
+            </a>
+
+        </div>
+
+    </section>
+
+
+    <!-- FOOTER -->
+
+    <footer>
+        <p>Designed & Built by Samikshya Neupane © 2026</p>
+    </footer>
 
 </body>
-</html>
 
+</html>
