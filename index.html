@@ -1,564 +1,97 @@
+
 <!DOCTYPE html>
 <html lang="en">
-
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-
-    <title>Samikshya Neupane | Portfolio</title>
-
+    <title>Personal Expense Tracker</title>
     <link rel="stylesheet" href="style.css">
 </head>
 
 <body>
 
-    <!-- =========================
-         NAVIGATION
-    ========================== -->
+    <div class="container">
 
-    <nav>
-        <h2>SN.</h2>
+        <h1>Personal Expense Tracker</h1>
+        <p>Track your spending and manage your money.</p>
 
-        <ul>
-            <li><a href="#home">Home</a></li>
-            <li><a href="#about">About</a></li>
-            <li><a href="#skills">Skills</a></li>
-            <li><a href="#experience">Experience</a></li>
-            <li><a href="#projects">Projects</a></li>
-            <li><a href="#contact">Contact</a></li>
-        </ul>
-    </nav>
+        <h2>Add New Expense</h2>
 
+        <form id="expense-form">
 
-   <section id="home">
-
-    <div class="home-workspace">
-
-        <!-- LEFT PROFILE CARD -->
-        <div class="profile-card">
-
-            <div class="profile-image">
-                <img src="profile.jpeg" alt="Samikshya Neupane">
-            </div>
-
-            <h3>Samikshya Neupane</h3>
-
-            <p class="profile-degree">
-                Computer Science +<br>
-                Business Analytics
-            </p>
-
-            <div class="profile-tags">
-                <span>Cybersecurity</span>
-                <span>Data</span>
-                <span>Technology</span>
-            </div>
-
-            <a href="#contact" class="profile-contact">
-                Let's Connect →
-            </a>
-
-        </div>
-
-
-        <!-- MAIN INTRO -->
-        <div class="intro-area">
-
-            <p class="intro-label">HELLO, I'M</p>
-
-            <h1>Samikshya<br>Neupane.</h1>
-
-            <h2>
-                I explore
-                <span>cybersecurity,</span><br>
-                technology & data.
-            </h2>
-
-            <p class="intro-description">
-                Computer Science & Business Analytics student at
-                Caldwell University, building practical skills through
-                projects, coursework, and hands-on experience.
-            </p>
-
-            <div class="home-buttons">
-                <a href="#projects" class="primary-button">
-                    Explore My Work →
-                </a>
-
-                <a href="#about" class="secondary-button">
-                    About Me
-                </a>
-            </div>
-
-
-            <!-- CURRENTLY AREA -->
-            <div class="currently">
-
-                <p class="currently-title">CURRENTLY</p>
-
-                <div class="currently-grid">
-
-                    <div class="current-item">
-                        <span>01</span>
-                        <p>EXPLORING</p>
-                        <h4>Cybersecurity</h4>
-                    </div>
-
-                    <div class="current-item">
-                        <span>02</span>
-                        <p>BUILDING</p>
-                        <h4>Projects</h4>
-                    </div>
-
-                    <div class="current-item">
-                        <span>03</span>
-                        <p>STUDYING</p>
-                        <h4>CS + Business Analytics</h4>
-                    </div>
-
-                </div>
-
-            </div>
-
-        </div>
-
-    </div>
-
-
-    <!-- MOVING SKILL STRIP -->
-    <div class="skill-strip">
-        <div class="skill-strip-track">
-            CYBERSECURITY ✦ DATA ✦ PYTHON ✦ SQL ✦ REACT ✦
-            GITHUB ✦ TECHNOLOGY ✦ CYBERSECURITY ✦ DATA ✦
-            PYTHON ✦ SQL ✦ REACT ✦ GITHUB ✦ TECHNOLOGY ✦
-        </div>
-    </div>
-
-</section>
-
-    <!-- =========================
-         ABOUT
-    ========================== -->
-
-    <section id="about">
-
-        <p class="section-label">
-            GET TO KNOW ME
-        </p>
-
-        <h2>About Me</h2>
-
-        <p>
-            I'm a Computer Science and Business Analytics student at
-            Caldwell University with an interest in cybersecurity,
-            technology, and data.
-        </p>
-
-        <p>
-            I enjoy learning how technology can be used to solve
-            real-world problems. I'm currently developing my technical
-            skills through coursework, certifications, and hands-on
-            projects.
-        </p>
-
-        <p>
-            My goal is to continue building practical experience and
-            pursue opportunities in cybersecurity and information
-            technology.
-        </p>
-
-    </section>
-
-
-    <!-- =========================
-         EDUCATION
-    ========================== -->
-
-    <section id="education">
-
-        <p class="section-label">
-            MY ACADEMIC BACKGROUND
-        </p>
-
-        <h2>Education</h2>
-
-        <div class="education-card">
-
-            <div class="education-header">
-
-                <div>
-
-                    <h3>Caldwell University</h3>
-
-                    <p class="degree">
-                        B.S. Computer Science & Business Analytics
-                    </p>
-
-                </div>
-
-                <span>
-                    Expected December 2027
-                </span>
-
-            </div>
-
-
-            <p class="location">
-                Caldwell, New Jersey
-            </p>
-
-
-            <div class="education-details">
-
-                <p>
-                    <strong>GPA:</strong>
-                    3.69 / 4.00
-                </p>
-
-                <p>
-                    <strong>Honors:</strong>
-                    Dean's List
-                </p>
-
-            </div>
-
-        </div>
-
-    </section>
-
-
-    <!-- =========================
-         SKILLS
-    ========================== -->
-
-    <section id="skills">
-
-        <p class="section-label">
-            WHAT I WORK WITH
-        </p>
-
-        <h2>Skills</h2>
-
-
-        <div class="skills-container">
-
-
-            <div class="skill-card">
-
-                <h3>
-                    💻 Programming & Web
-                </h3>
-
-                <p>Python</p>
-                <p>HTML & CSS</p>
-                <p>JavaScript</p>
-                <p>React</p>
-
-            </div>
-
-
-            <div class="skill-card">
-
-                <h3>
-                    🛠️ Tools & Platforms
-                </h3>
-
-                <p>GitHub</p>
-                <p>Google Workspace</p>
-                <p>WordPress</p>
-
-            </div>
-
-
-            <div class="skill-card">
-
-                <h3>
-                    🎨 Design
-                </h3>
-
-                <p>Figma</p>
-                <p>Canva</p>
-                <p>Adobe Photoshop</p>
-                <p>Adobe XD & InDesign</p>
-
-            </div>
-
-
-            <div class="skill-card">
-
-                <h3>
-                    🌎 Languages
-                </h3>
-
-                <p>Nepali — Native</p>
-                <p>English — Fluent</p>
-                <p>Hindi — Fluent</p>
-
-            </div>
-
-
-        </div>
-
-    </section>
-
-
-    <!-- =========================
-         EXPERIENCE
-    ========================== -->
-
-    <section id="experience">
-
-        <p class="section-label">
-            WHERE I'VE WORKED
-        </p>
-
-        <h2>Experience</h2>
-
-
-        <!-- PEER TUTOR -->
-
-        <div class="experience-card">
-
-            <div class="experience-header">
-
-                <div>
-
-                    <h3>Peer Tutor</h3>
-
-                    <p class="company">
-                        Caldwell University
-                    </p>
-
-                </div>
-
-                <span>
-                    Oct 2026-
-                </span>
-
-            </div>
-
-
-            <p class="experience-location">
-                Caldwell, New Jersey
-            </p>
-
-
-            <ul>
-
-                <li>
-                    Selected to provide peer tutoring and academic
-                    support to Caldwell University students.
-                </li>
-
-                <li>
-                    Support students in understanding course concepts
-                    and developing effective learning and study
-                    strategies.
-                </li>
-
-                <li>
-                    Use clear communication and individualized
-                    explanations to help students strengthen their
-                    understanding.
-                </li>
-
-            </ul>
-
-        </div>
-
-
-        <!-- TECH SUPPORT -->
-
-        <div class="experience-card">
-
-            <div class="experience-header">
-
-                <div>
-
-                    <h3>
-                        Tech Support Specialist
-                    </h3>
-
-                    <p class="company">
-                        Crane's Mill
-                    </p>
-
-                </div>
-
-                <span>
-                    Jan 2026 — May 2026
-                </span>
-
-            </div>
-
-
-            <p class="experience-location">
-                West Caldwell, New Jersey • Experiential Learning Extern
-            </p>
-
-
-            <ul>
-
-                <li>
-                    Provided clear and patient technical support by
-                    troubleshooting hardware and software issues.
-                </li>
-
-                <li>
-                    Assisted with basic network and system tasks in a
-                    professional IT environment.
-                </li>
-
-                <li>
-                    Explained technical concepts in simple terms to
-                    users with varying levels of experience.
-                </li>
-
-                <li>
-                    Strengthened communication and problem-solving
-                    skills through direct user interaction.
-                </li>
-
-            </ul>
-
-        </div>
-
-    </section>
-
-
-    <!-- =========================
-         PROJECTS
-    ========================== -->
-
-    <section id="projects">
-
-        <p class="section-label">
-            WHAT I'VE BUILT
-        </p>
-
-        <h2>Projects</h2>
-
-
-        <div class="projects-container">
-
+            <label for="expense-name">Expense Name</label>
+            <input type="text" id="expense-name"
+                   placeholder="Example: Coffee" required>
             
-<!-- SPLUNK CYBERSECURITY PROJECT -->
-<div class="project-card featured-project">
-  <p class="project-type">CYBERSECURITY PROJECT</p>
+            <label for="expense-date">Expense Date</label>
+            <input type="date" id="expense-date" required>
+       
 
-  <h3>SSH Threat Detection &amp; Security Monitoring</h3>
+            <label for="expense-amount">Amount ($)</label>
+            <input type="number" id="expense-amount"
+                   placeholder="Example: 5.50"
+                   min="0.01" step="0.01" required>
 
-  <p class="project-event">
-    Independent Project — November 2026
-  </p>
+            <label for="expense-category">Category</label>
+            <select id="expense-category">
+                <option value="Food">Food</option>
+                <option value="Shopping">Shopping</option>
+                <option value="Transportation">Transportation</option>
+                <option value="Bills">Bills</option>
+                <option value="Other">Other</option>
+            </select>
 
-  <p class="project-description">
-    Built a Splunk Enterprise security monitoring lab using
-    simulated Linux SSH authentication logs. Developed three
-    SPL detection rules to identify suspicious login patterns
-    and potential password spraying. Created a four-panel
-    dashboard and evaluated detection rules using 49
-    simulated authentication events.
-  </p>
+            <button type="submit">Add Expense</button>
 
-  <div class="project-tech">
-    <span>Splunk</span>
-    <span>SPL</span>
-    <span>Python</span>
-    <span>SIEM</span>
-  </div>
+        </form>
 
-  <a href="https://github.com/Samikshya09/SSH-Threat-Detection-Splunk"
-     target="_blank"
-     rel="noopener noreferrer">
-    View GitHub Project →
-  </a>
+        <h2>Total Spending</h2>
+        <h3 id="total-spending">$0.00</h3>
+
+
+<div class="chart-section">
+    <h2>Spending by Category</h2>
+    <p>See where your money goes.</p>
+
+    <div id="category-chart"></div>
 </div>
 
+<div class="import-section">
+    <h2>Import Expenses</h2>
+    <p>Upload a CSV file to add multiple expenses at once.</p>
 
-            <!-- NASA PROJECT -->
+    <input
+        type="file"
+        id="csv-file"
+        accept=".csv,text/csv"
+    >
 
-            <div class="project-card featured-project">
+    <button type="button" id="import-button">
+        Import CSV
+    </button>
 
-                <p class="project-type">
-                    FEATURED PROJECT
-                </p>
+    <p id="import-message"></p>
+</div>
 
-                <h3>
-                    ☄️ Asteroid Impact Simulator
-                </h3>
+        
+<h2>My Expenses</h2>
 
-                <p class="project-event">
-                    NASA Space Apps Hackathon — Effort 365
-                </p>
+<div class="month-filter">
+    <label for="filter-month">Filter by Month</label>
+    <input type="month" id="filter-month">
+    <button type="button" id="clear-filter">Show All</button>
+</div>
 
-                <p class="project-description">
-                    Developed an interactive asteroid impact simulator
-                    designed to make complex asteroid impact data easier
-                    for the public to understand.
-                </p>
+<p id="monthly-total"></p>
 
+<ul id="expense-list"></ul>
 
-                <div class="project-tech">
+        
 
-                    <span>React</span>
-                    <span>Tailwind CSS</span>
-                    <span>Python</span>
-                    <span>Flask</span>
+    </div>
 
-                </div>
-
-            </div>
-
-
-           
-
-
-        </div>
-
-    </section>
-
-
-    <!-- =========================
-         CONTACT
-    ========================== -->
-
-    <section id="contact">
-
-        <p class="section-label">
-            LET'S CONNECT
-        </p>
-
-        <h2>
-            Contact Me
-        </h2>
-
-
-        <p class="contact-text">
-            I'm always open to connecting, learning, and exploring
-            opportunities in technology, cybersecurity, and data.
-            Feel free to reach out!
-        </p>
-
-
-        <div class="contact-links">
-
-            <a href="mailto:sneupane6@caldwell.edu">
-                Email Me
-            </a>
-
-            <a
-                href="https://www.linkedin.com/in/samikshya5"
-                target="_blank"
-            >
-                LinkedIn
-            </a>
-
-        </div>
-
-    </section>
-
+    <script src="script.js"></script>
 
 </body>
-
 </html>
+
